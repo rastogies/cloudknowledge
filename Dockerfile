@@ -8,6 +8,6 @@ WORKDIR /var/www/html
 RUN unzip dpot.zip
 RUN cp -rvf dpot/* .
 RUN rm -rf dpot dpot.zip
-CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D" ,"FOREGROUND"]
 EXPOSE 80
 © 2021 GitHub, Inc.
